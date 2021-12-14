@@ -890,6 +890,7 @@ load_with_builtin(
         if (SIXEL_FAILED(status)) {
             goto end;
         }
+        frame->len = pchunk->size;
         stbi_allocator = pchunk->allocator;
         stbi__start_mem(&s, pchunk->buffer, (int)pchunk->size);
         frame->pixels = stbi__load_and_postprocess_8bit(&s, &frame->width, &frame->height, &depth, 3);
@@ -1274,6 +1275,7 @@ load_with_gd(
 #endif
     }
 
+    frame->size = pchunk->size;
     frame->width = gdImageSX(im);
     frame->height = gdImageSY(im);
     frame->pixelformat = SIXEL_PIXELFORMAT_RGB888;
