@@ -261,7 +261,7 @@ You can install libsixel via the following package systems.
 - [Homebrew](https://formulae.brew.sh/formula/libsixel)
 - [yacp](https://github.com/fd00/yacp/tree/master/libsixel)
 - [Debian](https://packages.debian.org/search?searchon=names&keywords=libsixel)
-- [AUR](https://aur.archlinux.org/packages/libsixel-git/)
+- [Arch Linux](https://archlinux.org/packages/community/x86_64/libsixel/)
 - [Portage](https://packages.gentoo.org/package/media-libs/libsixel)
 - [Ubuntu](https://launchpad.net/ubuntu/+source/libsixel)
 - [NixOS](https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/libraries/libsixel/default.nix)
@@ -331,6 +331,10 @@ suggests how to convert PIL images into SIXEL graphics using libsixel's Python i
 ## APIs
 
 APIs are provided for C, Python, Perl, PHP, and Ruby. For documentation of the C API, see the file [`md/C API.md`](https://github.com/libsixel/libsixel/blob/master/md/C%20API.md), or its header, [`sixel.h`](https://raw.githubusercontent.com/libsixel/libsixel/master/include/sixel.h.in). For documentations of the APIs for scripting languages, see the README for them in their respective directories.
+
+### Bindings
+
+- https://github.com/johnnychen94/Sixel.jl (Julia wrapper)
 
 ## Support
 
